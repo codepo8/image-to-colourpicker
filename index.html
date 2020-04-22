@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limiting input type="colour" to a certain palette (from an image)</title>
+    <link rel="stylesheet" href="image-to-colourpicker.css">
+</head>
+<body>
+    <h1>Limiting input type="colour" to a certain palette (from an image)</h1>
+    <h2>Simple limitation:</h2>
+    <input type="color" list="boringpresets"></label>
+    <datalist id="boringpresets">
+      <option>#889933</option>
+      <option value="#cccccc">Grey</option>
+      <option value="#ffffff">White</option>
+      <option value="#6699cc">Blue</option>
+    </datalist> 
+    <h2>Import palette from image</h2>
+    <div id="container">
+        <div id="imagecontainer">
+            <p>Try it by clicking the images below and then checking the colour picker.</p>
+            <button><img src="limited-round.png" alt="pixel logo with blue gradient"></button>
+            <button><img src="limited.png" alt="pixel logo with pink gradient"></button>
+        </div>
+    
+
+        <form action="#">
+        <div id="pickercontainer">
+            <label>Pick a colour:
+                <input id="pickcolour" type="color">
+            </label>
+        </div>
+
+        <p>Alternatively Drag and Drop an image onto the document, paste it, or use the upload bar below.</p>
+
+        <div>
+            <input id="getfile" type="file" />
+            <label for="getfile">Upload an image</label>
+        </div>
+        </form>
+      </div>
+      <script src="image-to-colourpicker.js"></script>
+</body>
+</html>

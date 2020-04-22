@@ -1,0 +1,25 @@
+html {
+    background: #111;
+    color: #f8f8f8;
+    font-family: helvetica, arial, sans-serif;
+}
+body {
+    padding: 1.5em;
+}
+h1 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+#imagecontainer button {
+    border: none;
+    background: transparent;
+    display: block;
+    padding: .5em;
+}
+input[type=file] {
+    font-family: inherit;
+}
