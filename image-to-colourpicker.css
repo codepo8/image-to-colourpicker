@@ -14,6 +14,12 @@ h2 {
     font-size: 1.2em;
     font-weight: normal;
 }
+p {
+    line-height: 1.3em;
+}
+a {
+    color: lime;
+}
 #imagecontainer button {
     border: none;
     background: transparent;
