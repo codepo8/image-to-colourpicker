@@ -1,7 +1,6 @@
 (function(){
 
 // Storing some HTML references for faster access   
-
     const imagecontainer = document.querySelector('#imagecontainer');
     const pickercontainer = document.querySelector('#pickercontainer');
 
@@ -63,7 +62,7 @@
         colourpicker.click();
     }
 
-/* Helper methods to get the image into th document. 
+/* Helper methods to get the image into the document. 
    See: 
    https://christianheilmann.com/2020/03/20/fun-with-browsers-how-to-get-an-image-into-the-current-page/
 */    
@@ -118,4 +117,5 @@
         if(t.src) { loadImage(t.src); }
         ev.preventDefault();
     })
-})();
+
+  })();
